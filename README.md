@@ -10,7 +10,8 @@ En este documento vamos a detallar como montar a nivel local via docker-compose 
 En primer lugar, como requisíto indispensable, tendremos que tener instalado docker-compose en nuestra máquina local. 
 
 Crearemos un archivo docker-compose que tendrá que ser como el que se muestra a continuación:
-`
+
+<pre><code>
 docker-compose.yml
 version: "3"
  
@@ -61,7 +62,7 @@ volumes:
   sonarqube_bundled-plugins:
   sonarqube_postgresql:
   sonarqube_postgresql_data:
-`
+</pre></code>
 
 Como podemos observar en el fichero anteriormente mostrado, además del propio artefacto de sonar, se tendrá que crear paralelamente un artefacto de postgres asociado al propio sonar, el cuál será el encargado de alojar los datos de nuestros análisis.
 
